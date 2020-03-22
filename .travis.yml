@@ -6,4 +6,4 @@ before_install:
     - docker build -t maheshdwaghmare/frontend -f Dockerfile.dev .
 
 script:
-    - winpty docker run maheshdwaghmare/frontend npm run test -- --coverage
+    - docker run maheshdwaghmare/frontend npm run test -- --coverage
